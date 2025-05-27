@@ -7,6 +7,7 @@ import HealthStatusCards from './components/HealthStatusCards';
 import CalendarView from './components/CalendarView';
 import UpcomingSchedule from './components/UpcomingSchedule';
 import ActivityFeed from './components/ActivityFeed';
+import { IoMdArrowDropdown } from "react-icons/io";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -70,8 +71,8 @@ function App() {
               <div className="flex-1 min-w-0 max-w-full xl:max-w-none">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 md:mb-6 gap-2 sm:gap-0">
                   <h1 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 truncate">Dashboard</h1>
-                  <div className="text-xs sm:text-sm text-indigo-600 font-medium cursor-pointer hover:text-indigo-700 flex-shrink-0 transition-colors">
-                    This Week ↓
+                  <div className="text-xs sm:text-sm flex item-end justify-end text-indigo-600 font-medium cursor-pointer hover:text-indigo-700 flex-shrink-0 transition-colors">
+                    This Week <IoMdArrowDropdown className='mt-2' />
                   </div>
                 </div>
                 <div className="space-y-4 sm:space-y-6">
@@ -82,7 +83,7 @@ function App() {
                   <ActivityFeed />
                 </div>
               </div>
-              <div className="w-full xl:w-2/4 bg-[#f5f8ff] rounded-xl p-3 sm:p-4 md:p-6">
+              <div className="w-full xl:w-2/4 bg-[#f5f8ff] rounded-xl  ">
                 <CalendarView />
                 <UpcomingSchedule />
               </div>
