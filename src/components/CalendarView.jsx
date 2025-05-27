@@ -73,7 +73,7 @@ const CalendarView = () => {
         })}
       </div>
       <div className="flex flex-col sm:flex-row  gap-4 mt-6 sm:mt-8 overflow-x-auto">
-        <div className="bg-indigo-700 text-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.02] group w-full sm:w-[200px] md:w-[220px]">
+        <div className="bg-indigo-700 text-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300  group w-full sm:w-[200px] md:w-[220px]">
           <div className="flex justify-between items-start">
             <div className="flex-1 pr-3">
               <h3 className="text-base font-semibold mb-1 group-hover:text-indigo-100 transition-colors">
@@ -88,7 +88,7 @@ const CalendarView = () => {
           </div>
         </div>
 
-        <div className="bg-[#eef0fc] text-gray-900 rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.02] group w-full sm:w-[260px] md:w-[290px]">
+        <div className="bg-[#eef0fc] text-gray-900 rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300  group w-full sm:w-[260px] md:w-[290px]">
           <div className="flex justify-between items-start">
             <div className="flex-1 pr-3">
               <h3 className="text-base font-semibold mb-1 group-hover:text-indigo-700 transition-colors">
